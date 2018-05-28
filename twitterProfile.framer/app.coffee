@@ -1,14 +1,28 @@
-cover.image = Utils.randomImage(cover)
+
+
+cover.image = Utils.randomImage()
+
 
 # initial setup
 tweets = 10
-topOffset = -80
+topOffset = -60
+
+# headerOverlay
+headerOverlay = new Layer
+	parent: header
+	width: header.width
+	height: header.width
+	backgroundColor: "rgba(0,0,0,.7)"
+	opacity: 0	
+
+header.originY = 0
 
 # scroll component
 scroll = new ScrollComponent
 	size: Screen.size
 	scrollHorizontal: false
 	parent: profile
+
 	
 navBar.bringToFront()	
 
@@ -17,7 +31,14 @@ twitterLayers = [avatar, info, tab]
 for layer in twitterLayers
 	layer.parent = scroll.content
 
-		
+avatar.borderRadius = 100
+avatar.originY = 1.3
+avatar.image = "images/user.jpeg"
+avatar.style =
+	"border":"6px solid #fff"
+	
+headerActions.bringToFront()
+	
 # tweet list
 for tweet in [0...tweets]
 	tweet = new Layer
@@ -88,3 +109,26 @@ for tweet in [0...tweets]
 		x: 259
 		y: 98
 
+tab.bringToFront()	
+
+updateTabBar = ->
+	if scroll.scrollY > 265
+		tab.y = scroll.scrollY - topOffset
+	else
+		tab.y = 332	
+
+# events
+scroll.content.on "change:y", (scrollY) ->
+	header.y = Utils.modulate(scrollY,[0,topOffset],[0,topOffset],true)
+	avatar.scale = Utils.modulate(scrollY,[0,topOffset],[1,.6],true)
+	headerMeta.y = Utils.modulate(scrollY,[-120,-145],[152,80],true) 
+	header.scale = Utils.modulate(scrollY,[0,screen.height],[1,12],true)
+	cover.blur = Utils.modulate(scrollY,[0,screen.height],[0,20],true)
+	headerOverlay.opacity = Utils.modulate(scrollY,[0,screen.height/2],[0,1],true)
+	
+	updateTabBar()
+
+	if scrollY < topOffset
+		header.placeBefore(scroll)
+	else
+		header.placeBehind(scroll)	
