@@ -1,6 +1,6 @@
 
 
-cover.image = Utils.randomImage()
+coverImg.image = Utils.randomImage()
 
 
 # initial setup
@@ -123,7 +123,7 @@ scroll.content.on "change:y", (scrollY) ->
 	avatar.scale = Utils.modulate(scrollY,[0,topOffset],[1,.6],true)
 	headerMeta.y = Utils.modulate(scrollY,[-120,-145],[152,80],true) 
 	header.scale = Utils.modulate(scrollY,[0,screen.height],[1,12],true)
-	cover.blur = Utils.modulate(scrollY,[0,screen.height],[0,20],true)
+	coverImg.blur = Utils.modulate(scrollY,[0,screen.height],[0,20],true)
 	headerOverlay.opacity = Utils.modulate(scrollY,[0,screen.height/2],[0,1],true)
 	
 	updateTabBar()

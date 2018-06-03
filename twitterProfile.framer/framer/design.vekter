@@ -59,7 +59,7 @@
                 "fillEnabled" : false,
                 "right" : 0,
                 "opacity" : 1,
-                "name" : "cover",
+                "name" : "coverImg",
                 "blendingMode" : "normal",
                 "contrast" : 100,
                 "centerAnchorY" : 0.5,
@@ -97,7 +97,7 @@
                 "deviceType" : null,
                 "bottom" : 0,
                 "borderTop" : 1,
-                "targetName" : "cover",
+                "targetName" : "coverImg",
                 "radiusBottomRight" : 0,
                 "blurEnabled" : 0
               },
@@ -139,29 +139,29 @@
                           "depth" : 0,
                           "inlineStyleRanges" : [
                             {
-                              "length" : 12,
                               "style" : "LETTERSPACING:0.0",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "ALIGN:left",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "FONT:__SF-UI-Display-Regular__",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "COLOR:hsl(0, 0%, 100%)",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "SIZE:11",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             }
                           ],
                           "entityRanges" : [
@@ -257,29 +257,29 @@
                           "depth" : 0,
                           "inlineStyleRanges" : [
                             {
-                              "length" : 13,
                               "style" : "LETTERSPACING:0.0",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             },
                             {
-                              "length" : 13,
                               "style" : "ALIGN:left",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             },
                             {
-                              "length" : 13,
                               "style" : "FONT:__SF-UI-Display-Heavy__",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             },
                             {
-                              "length" : 13,
                               "style" : "SIZE:14",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             },
                             {
-                              "length" : 13,
                               "style" : "COLOR:hsl(0, 0%, 100%)",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             }
                           ],
                           "entityRanges" : [
@@ -1460,29 +1460,29 @@
                       "depth" : 0,
                       "inlineStyleRanges" : [
                         {
-                          "length" : 5,
                           "style" : "FONT:HelveticaNeue-Bold",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         },
                         {
-                          "length" : 5,
                           "style" : "COLOR:rgb(100, 119, 133)",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         },
                         {
-                          "length" : 5,
                           "style" : "SIZE:14.48",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         },
                         {
-                          "length" : 5,
                           "style" : "LETTERSPACING:0.0",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         },
                         {
-                          "length" : 5,
                           "style" : "ALIGN:center",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         }
                       ],
                       "entityRanges" : [
@@ -1571,29 +1571,29 @@
                       "depth" : 0,
                       "inlineStyleRanges" : [
                         {
-                          "length" : 5,
                           "style" : "FONT:HelveticaNeue-Bold",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         },
                         {
-                          "length" : 5,
                           "style" : "COLOR:rgb(100, 119, 133)",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         },
                         {
-                          "length" : 5,
                           "style" : "SIZE:14.48",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         },
                         {
-                          "length" : 5,
                           "style" : "LETTERSPACING:0.0",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         },
                         {
-                          "length" : 5,
                           "style" : "ALIGN:center",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 5
                         }
                       ],
                       "entityRanges" : [
@@ -1682,29 +1682,29 @@
                       "depth" : 0,
                       "inlineStyleRanges" : [
                         {
-                          "length" : 16,
                           "style" : "FONT:HelveticaNeue-Bold",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 16
                         },
                         {
-                          "length" : 16,
                           "style" : "COLOR:rgb(100, 119, 133)",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 16
                         },
                         {
-                          "length" : 16,
                           "style" : "SIZE:14.48",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 16
                         },
                         {
-                          "length" : 16,
                           "style" : "LETTERSPACING:0.0",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 16
                         },
                         {
-                          "length" : 16,
                           "style" : "ALIGN:left",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 16
                         }
                       ],
                       "entityRanges" : [
@@ -1793,29 +1793,29 @@
                       "depth" : 0,
                       "inlineStyleRanges" : [
                         {
-                          "length" : 6,
                           "style" : "FONT:HelveticaNeue-Bold",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 6
                         },
                         {
-                          "length" : 6,
                           "style" : "COLOR:rgb(30, 161, 241)",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 6
                         },
                         {
-                          "length" : 6,
                           "style" : "SIZE:14.48",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 6
                         },
                         {
-                          "length" : 6,
                           "style" : "LETTERSPACING:0.0",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 6
                         },
                         {
-                          "length" : 6,
                           "style" : "ALIGN:center",
-                          "offset" : 0
+                          "offset" : 0,
+                          "length" : 6
                         }
                       ],
                       "entityRanges" : [
@@ -2313,29 +2313,29 @@
                           "depth" : 0,
                           "inlineStyleRanges" : [
                             {
-                              "length" : 12,
                               "style" : "COLOR:rgb(101, 119, 134)",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "SIZE:15.48",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "LETTERSPACING:0.0",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "ALIGN:left",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "FONT:__SF-UI-Display-Regular__",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             }
                           ],
                           "entityRanges" : [
@@ -2904,29 +2904,29 @@
                           "depth" : 0,
                           "inlineStyleRanges" : [
                             {
-                              "length" : 1,
                               "style" : "COLOR:rgb(101, 119, 134)",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 1
                             },
                             {
-                              "length" : 1,
                               "style" : "SIZE:14.48",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 1
                             },
                             {
-                              "length" : 1,
                               "style" : "LETTERSPACING:0.9",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 1
                             },
                             {
-                              "length" : 1,
                               "style" : "ALIGN:left",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 1
                             },
                             {
-                              "length" : 1,
                               "style" : "FONT:__SF-UI-Display-Regular__",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 1
                             }
                           ],
                           "entityRanges" : [
@@ -3015,29 +3015,29 @@
                           "depth" : 0,
                           "inlineStyleRanges" : [
                             {
-                              "length" : 12,
                               "style" : "COLOR:rgb(101, 119, 134)",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "SIZE:13.48",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "LETTERSPACING:0.0",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "ALIGN:left",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             },
                             {
-                              "length" : 12,
                               "style" : "FONT:__SF-UI-Display-Regular__",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 12
                             }
                           ],
                           "entityRanges" : [
@@ -3126,29 +3126,29 @@
                           "depth" : 0,
                           "inlineStyleRanges" : [
                             {
-                              "length" : 13,
                               "style" : "COLOR:rgb(20, 23, 26)",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             },
                             {
-                              "length" : 13,
                               "style" : "SIZE:21.47",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             },
                             {
-                              "length" : 13,
                               "style" : "LETTERSPACING:0.0",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             },
                             {
-                              "length" : 13,
                               "style" : "ALIGN:left",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             },
                             {
-                              "length" : 13,
                               "style" : "FONT:__SF-UI-Display-Heavy__",
-                              "offset" : 0
+                              "offset" : 0,
+                              "length" : 13
                             }
                           ],
                           "entityRanges" : [
@@ -3419,29 +3419,29 @@
                               "depth" : 0,
                               "inlineStyleRanges" : [
                                 {
-                                  "length" : 12,
                                   "style" : "COLOR:rgb(30, 161, 241)",
-                                  "offset" : 0
+                                  "offset" : 0,
+                                  "length" : 12
                                 },
                                 {
-                                  "length" : 12,
                                   "style" : "SIZE:14.98",
-                                  "offset" : 0
+                                  "offset" : 0,
+                                  "length" : 12
                                 },
                                 {
-                                  "length" : 12,
                                   "style" : "LETTERSPACING:0.2",
-                                  "offset" : 0
+                                  "offset" : 0,
+                                  "length" : 12
                                 },
                                 {
-                                  "length" : 12,
                                   "style" : "ALIGN:left",
-                                  "offset" : 0
+                                  "offset" : 0,
+                                  "length" : 12
                                 },
                                 {
-                                  "length" : 12,
                                   "style" : "FONT:__SF-UI-Display-Regular__",
-                                  "offset" : 0
+                                  "offset" : 0,
+                                  "length" : 12
                                 }
                               ],
                               "entityRanges" : [
