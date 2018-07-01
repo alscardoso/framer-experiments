@@ -1,6 +1,7 @@
 # TODO
-# Hide UI after a few seconds if no interaction
+
 # Switch videos dynamicaly
+# Update player when swtich video
 # Scrubber interaction with preview
 
 
@@ -339,6 +340,12 @@ showPause = ->
 	pauseIcon.visible = true
 	video.player.play()
 
+hideControls = ->
+	Utils.delay 2, ->
+		videoMeta.animate("hide")
+		playerUI.animate("hide")	
+	
+
 #load with thumbnail on mobile
 # videos[0].player.play()	
 # Utils.delay 0.25, -> showPlay()
@@ -391,8 +398,7 @@ playIcon.onTap ->
 		showPause()
 		
 	Utils.delay 2, ->
-		videoMeta.animate("hide")
-		playerUI.animate("hide")		
+		hideControls()	
 	
 pauseIcon.onTap -> 
 	showPlay()
@@ -406,8 +412,7 @@ overlay.onTap ->
 	overlay.ignoreEvents = true
 	
 	Utils.delay 2, ->
-		videoMeta.animate("hide")
-		playerUI.animate("hide")	
+		hideControls()
 	
 playerUI.onTapStart ->
 	videoWrapper.ignoreEvents = true
@@ -418,6 +423,10 @@ playerUI.onTapEnd ->
 videoWrapper.onTap ->
 	playerUI.stateCycle("hide","show")	
 	videoMeta.stateCycle("hide","show")
+	
+	Utils.delay 2, ->
+		hideControls()	
+	
 
 # on drag end update panel position
 panel.onDragEnd ->
