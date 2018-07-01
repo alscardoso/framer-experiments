@@ -1,3 +1,8 @@
+# TODO
+# Hide UI after a few seconds if no interaction
+# Switch videos dynamicaly
+# Scrubber interaction with preview
+
 
 # SETUP
 Framer.Screen.backgroundColor = "#000"
@@ -351,6 +356,9 @@ videoMeta.states.hide =
 videoMeta.states.show =
 	opacity:1		
 
+panel.states.hide = 
+	opacity: 0
+
 # EVENTS
 # scrubbing
 seekBar.knob.onDragStart ->
@@ -381,6 +389,10 @@ playIcon.onTap ->
 	if video.player.currentTime is video.player.duration
 		video.player.currentTime = 0
 		showPause()
+		
+	Utils.delay 2, ->
+		videoMeta.animate("hide")
+		playerUI.animate("hide")		
 	
 pauseIcon.onTap -> 
 	showPlay()
@@ -392,6 +404,10 @@ overlay.onTap ->
 	panel.animate
 		y: 667
 	overlay.ignoreEvents = true
+	
+	Utils.delay 2, ->
+		videoMeta.animate("hide")
+		playerUI.animate("hide")	
 	
 playerUI.onTapStart ->
 	videoWrapper.ignoreEvents = true
@@ -418,6 +434,7 @@ panel.on "change:y", ->
 	videoMeta.opacity = Utils.modulate(panel.screenFrame.y,[420,600],[0,1],true)
 	playerUI.opacity = Utils.modulate(panel.screenFrame.y,[420,600],[0,1],true)
 	gradient.opacity = Utils.modulate(panel.screenFrame.y,[420,600],[1,.5],true)
+	
 # tap browse to bring panel back
 browse.onTap ->
 	panel.animate
@@ -436,3 +453,5 @@ cards[0].onTap ->
 	videos[1].visible = false	
 	videos[2].player.play()	
 	videos[1].player.pause()
+
+		
