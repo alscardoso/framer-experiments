@@ -1,2 +1,2 @@
 # Framer Experiments
-Exploring Framer Studio and coffee script. 
+Prototypes built with Framer JS.
